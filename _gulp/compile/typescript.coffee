@@ -7,7 +7,6 @@ typescript  = require('gulp-typescript')
 
 # COMPILE TYPESCRIPT
 gulp.task 'compile:ts', ['clean'], ->
-  console.log 'compile:ts'
   gulp.src(configTS.files)
       .pipe(sourcemaps.init())
       .pipe(typescript(configTS.compilerOptions))
