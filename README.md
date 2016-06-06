@@ -16,5 +16,11 @@ Out of the box you get:
 ## Configure
 Everything you need to configure lives in [_config/app.js](_config/app.js)
 
+### Prerequisites
+- [Install Node.js](https://docs.npmjs.com/getting-started/installing-node)
+
+### To Use
+Simple clone the repo and run `npm install` to install dependencies. Then run `gulp` to start the server and point your browser to [http://localhost:3000](http://localhost:3000)
+
 ## Angular 2
 Checkout the `angular` branch to get Angular & Typescript support on top of the above.
