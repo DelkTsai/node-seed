@@ -17,7 +17,7 @@ let config = {
   // GZIP
   gzip: true,
 
-  namespace: 'gabba',
+  namespace: 'app',
 
   // PORT TO RUN ON
   port: 1981,

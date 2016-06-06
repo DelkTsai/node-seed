@@ -1,19 +1,6 @@
-# Node.js + Angular 2 Seed
+# CBI Web App
 
 Built on top of Express. Includes a simple configuration file, to easily turn features & customize settings.
-
-Out of the box you get:
-- Angular 2
-- Typescript
-- Socket.io
-- Redis
-- Authentication (with Passport.js or Apache style htpasswd)
-- Jade
-- Sass
-- Gulp build process with:
-  - Babel + Browserify
-  - Browsersync + Livereload
-  - Linting w/ ES Lint + Sass Lint
 
 ### Prerequisites
 - [Install Node.js](https://docs.npmjs.com/getting-started/installing-node)
