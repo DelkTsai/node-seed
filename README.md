@@ -16,11 +16,11 @@ Out of the box you get:
   - Linting w/ ES Lint + Sass Lint
 
 ### Prerequisites
-- Install Node.js
+- [Install Node.js](https://docs.npmjs.com/getting-started/installing-node)
 - Install Typings `npm install -g typings`
 
 ### To Use
 Simple clone the repo and run `npm install` to install dependencies. Then run `gulp` to start the server and point your browser to [http://localhost:3000](http://localhost:3000)
 
-##### Troubleshooting
+#### Troubleshooting
 If you run into any typescript errors, try running `typings install`
