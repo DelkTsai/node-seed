@@ -12,6 +12,9 @@ gulp.task 'serve', (cb) ->
       'README.md'
       'node_modules/**'
       '.DS_Store'
+      'public/lib'
+      'public/_build'
+      'public/js/**/*.min.js'
     ]).on('start', ->
       if !called
         runSequence [

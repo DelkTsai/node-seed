@@ -88,6 +88,7 @@ config.gulp = {
   browserSync: {
     baseDir: 'public',
     files: [ 'public/**/*.*', 'app/**/*.*', 'server/**/*.*' ],
+    ignore: [ 'public/lib', 'public/_build', 'public/js/**/*.min.js' ],
     open: false,
     port: 3000,
     reloadDelay: 2000
@@ -95,12 +96,13 @@ config.gulp = {
   src: {
     assets: {
       jade: {
-        templates: ['./app/views/**/*.jade']
+        templates: ['./app/**/*.jade', '!./app/views/**/*.jade']
       },
       js: ['./public/js/**/*.js', '!./public/js/main.min.js'],
       jsMain: './public/js/main.js',
       sass: ['./public/css/**/*.scss'],
-      sassMain: ['./public/css/main.scss']
+      sassMain: ['./public/css/main.scss'],
+      ts: ['./app/**/*.ts']
     },
     app: rootPath + 'app/**/*',
     lib: rootPath + 'lib/**/*'
@@ -113,10 +115,11 @@ config.gulp = {
       jsMain: './public/js/main.min.js',
       dir: './public/',
       jade: {
-        templates: './public/'
+        templates: './public/_build'
       },
       sass: './public/css/'
     },
+    build: './public/_build',
     dir: './public/',
     lib: './public/lib/'
   },

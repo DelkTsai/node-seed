@@ -11,5 +11,8 @@ gulp.task 'watch', ->
   gulp.watch config.gulp.src.assets.js, ->
     runSequence 'compile:js', 'reload'
 
-  # gulp.watch config.gulp.src.assets.jade, ->
-  #   runSequence 'compile:jade', 'reload'
+  gulp.watch config.gulp.src.assets.jade.templates, ->
+    runSequence 'compile:jade', 'reload'
+
+  gulp.watch config.gulp.src.assets.ts, ->
+    runSequence 'ts-files', 'compile:ts', 'reload'

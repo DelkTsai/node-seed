@@ -8,6 +8,9 @@ _build/
 node_modules/
 bower_components/
 
+typings/
+public/_build/
+public/lib/
 public/**/*.map
 public/css/**/*.css
 public/js/**/*.min.js

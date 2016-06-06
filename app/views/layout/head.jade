@@ -1,17 +1,16 @@
-html(lang="en")
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-      
-    if title
-      title= title
-    else
-      title Welcome
+title Angular 2 QuickStart
+meta(name='viewport', content='width=device-width, initial-scale=1')    
 
-    //- STYLES
-    link(rel='stylesheet', href='#{config.public.css}main.css')
-      
-    //- SCRIPTS
-    script(src='#{config.public.js}main.min.js')
+//- STYLES
+link(rel='stylesheet', href='css/main.css')
 
-  body
+//- LIB FILES
+script(src='/lib/core-js/client/shim.min.js')
+script(src='/lib/zone.js/dist/zone.js')
+script(src='/lib/reflect-metadata/Reflect.js')
+script(src='/lib/systemjs/dist/system.src.js')  
+script(src='_build/systemjs.config.js')
+
+//- SYSTEM
+script.
+  System.import('app').catch(function(err){ console.error(err); });
