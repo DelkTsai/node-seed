@@ -7,7 +7,7 @@ const express  = require('express'),
       app      = express();
 
 // EXPRESS SETTINGS
-require(__dirname + '/_config/express')(app);
+require(__dirname + '/server/_config/express')(app);
 
 // START THE APP BY LISTENING ON <PORT>
 app.server = app.listen(process.env.PORT || 1981, function(err) {

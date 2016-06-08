@@ -1,2 +1,2 @@
 require('coffee-script').register();
-require('require-dir')('./_gulp');
+require('require-dir')('./server/_gulp');

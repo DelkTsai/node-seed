@@ -9,7 +9,7 @@
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
-    "outDir": "public/components"
+    "outDir": "public/app"
   },
   "exclude": [
     "node_modules",
@@ -25,11 +25,11 @@
     "typings/**/*.d.ts"
   ],
   "files": [
+    "app/app.ts",
+    "app/components/welcome/welcome.ts",
     "typings/globals/core-js/index.d.ts",
     "typings/globals/jasmine/index.d.ts",
     "typings/globals/node/index.d.ts",
-    "typings/index.d.ts",
-    "app/app.ts",
-    "app/components/app.ts"
+    "typings/index.d.ts"
   ]
 }

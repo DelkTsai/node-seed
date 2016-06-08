@@ -1,0 +1,19 @@
+title Angular 2 QuickStart
+meta(name='viewport', content='width=device-width, initial-scale=1')    
+
+//- STYLES
+link(rel='stylesheet', href='css/main.css')
+  
+//- ICONS
+link(rel='icon', type='image/png', href='/favicon.png')
+
+//- LIB FILES
+script(src='/lib/core-js/client/shim.min.js')
+script(src='/lib/zone.js/dist/zone.js')
+script(src='/lib/reflect-metadata/Reflect.js')
+script(src='/lib/systemjs/dist/system.src.js')  
+script(src='/app/systemjs.config.js')
+
+//- SYSTEM
+script.
+  System.import('app').catch(function(err){ console.error(err); });
